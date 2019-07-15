@@ -1,5 +1,5 @@
 /*
-  Main component iterating over imagetextlinks, imagetexts and products and render components
+  Main component iterating over imagetextlinks, imagetexts and products and render those components
 */
 
 import React from "react";
