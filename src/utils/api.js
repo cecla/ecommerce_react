@@ -40,9 +40,16 @@ const getLinks = _ =>
     .then(response => response.json())
     .catch(error => console.log("error", error));
 
+const getMenu = _ =>
+  apiCall("menu")
+    .then(response => handleErrors(response))
+    .then(response => response.json())
+    .catch(error => console.log("error", error));
+
 export default {
   getProducts,
   getImageTexts,
   getImageTextLinks,
-  getLinks
+  getLinks,
+  getMenu
 };

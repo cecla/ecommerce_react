@@ -105,4 +105,65 @@ const links = [
   }
 ];
 
-export default { products, imageText, imageTextLinks, links };
+const menu = {
+  shirts: [
+    {
+      id: 1,
+      header: "Body fit",
+      list: [
+        { link: "", linkText: "Super Slim" },
+        { link: "", linkText: "Slim" },
+        { link: "", linkText: "Contemporary" },
+        { link: "", linkText: "Classic" },
+        { link: "", linkText: "Extra Long Sleeve" }
+      ]
+    },
+    {
+      id: 2,
+      list: [
+        { link: "", linkText: "All Shirts" },
+        { link: "", linkText: "New Arrivals" },
+        { link: "", linkText: "White Shirts" },
+        { link: "", linkText: "Outlet" }
+      ]
+    },
+    {
+      id: 3,
+      list: [
+        { link: "", linkText: "Size Guide" },
+        { link: "", linkText: "Eton Express" }
+      ]
+    },
+    {
+      id: 4,
+      header: "Collection",
+      list: [
+        { link: "", linkText: "Red Ribbon" },
+        { link: "", linkText: "Green Ribbon" },
+        { link: "", linkText: "Black Ribbon" }
+      ]
+    }
+  ],
+  accessories: [
+    {
+      id: 5,
+      header: "Accessories",
+      list: [
+        { link: "", linkText: "All accessories" },
+        { link: "", linkText: "Ties" },
+        { link: "", linkText: "Pocket Squares" }
+      ]
+    }
+  ],
+  ourWorld: [
+    {
+      id: 6,
+      list: [
+        { link: "", linkText: "About our shirts" },
+        { link: "", linkText: "About Eton" }
+      ]
+    }
+  ]
+};
+
+export default { products, imageText, imageTextLinks, links, menu };

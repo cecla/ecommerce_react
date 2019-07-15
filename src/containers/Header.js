@@ -4,27 +4,34 @@
 
 import React, { Component } from "react";
 import HeaderComponent from "../components/header/HeaderComponent";
+import api from "../utils/api";
 
 class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      menuOpen: false
+      menuOpen: "",
+      menu: []
     };
 
     this.openAndCloseMenu = this.openAndCloseMenu.bind(this);
   }
 
-  openAndCloseMenu() {
-    this.setState(({ menuOpen }) => ({ menuOpen: !menuOpen }));
+  componentDidMount() {
+    api.getMenu().then(menu => this.setState({ menu }));
+  }
+
+  openAndCloseMenu(menuOpen) {
+    this.setState({ menuOpen });
   }
 
   render() {
-    const { menuOpen } = this.state;
+    const { menuOpen, menu } = this.state;
     return (
       <HeaderComponent
         menuOpen={menuOpen}
         openAndCloseMenu={this.openAndCloseMenu}
+        menu={menu}
       />
     );
   }
