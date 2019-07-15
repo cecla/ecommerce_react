@@ -1,4 +1,3 @@
-(Private repository)
 # Made People - frontend case
 Tech:  React
 Used npx create-react-app for this case
