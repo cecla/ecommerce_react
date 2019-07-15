@@ -1,0 +1,14 @@
+.product {
+  box-sizing: border-box;
+
+  h4 {
+    font-size: $font-small;
+    margin: 3px 0 0;
+  }
+
+  p {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+  }
+}

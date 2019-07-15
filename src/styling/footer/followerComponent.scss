@@ -1,0 +1,15 @@
+@import "./constants.scss";
+
+.follower {
+  display: flex;
+  justify-content: center;
+
+  svg {
+    height: 35px;
+    padding: 0 10px;
+
+    g {
+      fill: $gray;
+    }
+  }
+}

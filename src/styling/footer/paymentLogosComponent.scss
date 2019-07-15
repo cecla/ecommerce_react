@@ -1,0 +1,12 @@
+@import "./constants.scss";
+
+.paymentlogos {
+  display: flex;
+  justify-content: center;
+  padding: $padding 0;
+
+  img {
+    margin: 0 5px;
+    border-radius: 3px;
+  }
+}

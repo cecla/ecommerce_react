@@ -1,0 +1,15 @@
+@import "./constants.scss";
+
+.subscribe {
+  display: flex;
+  padding: $padding $small-padding;
+
+  input {
+    flex: 1;
+    border: 2px solid $blue;
+    font-family: "EB Garamond", serif;
+    font-style: italic;
+    font-size: $font-medium;
+    padding-left: $small-padding;
+  }
+}

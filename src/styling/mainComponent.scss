@@ -1,0 +1,29 @@
+@import "./constants.scss";
+
+.main {
+  margin-top: 82px;
+
+  &__imagetext {
+    padding: 0 $small-padding;
+  }
+
+  &__products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 $small-padding $large-padding;
+
+    .product {
+      width: 50%;
+      padding: $small-padding 0;
+
+      &:nth-child(2n + 1) {
+        padding-right: $small-padding;
+      }
+
+      &:nth-child(2n) {
+        padding-left: $small-padding;
+      }
+    }
+  }
+}

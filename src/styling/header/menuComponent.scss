@@ -1,0 +1,22 @@
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  padding: $large-padding 0 0;
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $large-padding;
+
+    h4 {
+      text-transform: uppercase;
+      margin: 0 0 7px;
+      font-weight: 600;
+    }
+
+    a {
+      font-size: $font-small;
+      padding: 2px 0;
+    }
+  }
+}

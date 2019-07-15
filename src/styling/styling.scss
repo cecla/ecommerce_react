@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond|Open+Sans:300,400,600,700&display=swap");
+
+@import "./constants.scss";
+
+@import "./header/headerComponent.scss";
+@import "./header/navigationComponent.scss";
+@import "./header/menuComponent.scss";
+@import "./mainComponent.scss";
+@import "./imageTextLinkComponent.scss";
+@import "./imageTextComponent.scss";
+@import "./productComponent.scss";
+@import "./footer/footerComponent.scss";
+@import "./footer/followerComponent.scss";
+@import "./footer/smallNavigationComponent.scss";
+@import "./footer/subscribeComponent.scss";
+@import "./footer/linksComponent.scss";
+@import "./footer/paymentLogosComponent.scss";
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  width: 100%;
+  font-size: $font-medium;
+
+  h3 {
+    letter-spacing: 1.5px;
+    word-spacing: 5px;
+  }
+
+  p {
+    font-family: "EB Garamond", serif;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  input:focus {
+    outline: lighten($color: $blue, $amount: 20%) auto 5px;
+  }
+
+  .link-button {
+    padding: 7px 15px;
+    text-transform: uppercase;
+    background-color: $blue;
+    color: $white;
+    width: fit-content;
+    letter-spacing: 1.2px;
+  }
+
+  .width-50 {
+    width: 50%;
+  }
+}

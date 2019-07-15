@@ -1,0 +1,12 @@
+.imagetext {
+  padding-bottom: $large-padding;
+
+  &__content {
+    text-align: center;
+
+    h3,
+    p {
+      margin: 0;
+    }
+  }
+}
