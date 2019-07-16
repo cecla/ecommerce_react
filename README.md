@@ -1,4 +1,4 @@
-# Frontend case
+# Frontend case - E-commerce using React
 Tech:  React
 Used npx create-react-app for this case
 
