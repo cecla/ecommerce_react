@@ -1,4 +1,4 @@
-# Made People - frontend case
+# Frontend case
 Tech:  React
 Used npx create-react-app for this case
 
